@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const input = fs.readFileSync('./inputs/day1.txt', 'utf8').split('\n').map(Number);
 
-async function day1Part1 () {
+function day1Part1 () {
     let increases = 0;
     let prev = null;
 
@@ -22,7 +22,7 @@ async function day1Part1 () {
     return increases;
 }
 
-async function day1Part2 () {
+function day1Part2 () {
     let increases = 0;
     let prev = null;
 
@@ -47,6 +47,4 @@ async function day1Part2 () {
 }
 
 day1Part1()
-    .then(console.log)
-    .then(() => day1Part2())
-    .then(console.log);
+day1Part2()
