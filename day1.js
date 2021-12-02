@@ -1,5 +1,4 @@
 const fs = require('fs');
-
 const input = fs.readFileSync('./inputs/day1.txt', 'utf8').split('\n').map(Number);
 
 function day1Part1 () {
@@ -46,5 +45,5 @@ function day1Part2 () {
     return increases;
 }
 
-day1Part1()
-day1Part2()
+console.log(day1Part1());
+console.log(day1Part2());
